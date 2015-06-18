@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ADCDF501B32A6B100266D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCDF4F1B32A6B100266D07 /* AppDelegate.swift */; };
+		5ADCDF521B32A6B100266D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCDF511B32A6B100266D07 /* ViewController.swift */; };
+		5ADCDF551B32A6B100266D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCDF531B32A6B100266D07 /* Main.storyboard */; };
+		5ADCDF571B32A6B100266D07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCDF561B32A6B100266D07 /* Images.xcassets */; };
+		5ADCDF5A1B32A6B100266D07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCDF581B32A6B100266D07 /* LaunchScreen.xib */; };
+		5ADCDF661B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCDF651B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.swift */; };
+		5ADCDF711B32A6DF00266D07 /* UITabelView+LoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCDF701B32A6DF00266D07 /* UITabelView+LoadAnimation.swift */; };
+		5ADCDF731B32A92C00266D07 /* ZYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCDF721B32A92B00266D07 /* ZYViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ADCDF601B32A6B100266D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ADCDF421B32A6B100266D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ADCDF491B32A6B100266D07;
+			remoteInfo = ZYTabelViewLoadAnimationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5ADCDF4A1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYTabelViewLoadAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADCDF4E1B32A6B100266D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADCDF4F1B32A6B100266D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ADCDF511B32A6B100266D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5ADCDF541B32A6B100266D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5ADCDF561B32A6B100266D07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5ADCDF591B32A6B100266D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5ADCDF5F1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYTabelViewLoadAnimationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADCDF641B32A6B100266D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADCDF651B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTabelViewLoadAnimationDemoTests.swift; sourceTree = "<group>"; };
+		5ADCDF701B32A6DF00266D07 /* UITabelView+LoadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabelView+LoadAnimation.swift"; sourceTree = "<group>"; };
+		5ADCDF721B32A92B00266D07 /* ZYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ADCDF471B32A6B100266D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADCDF5C1B32A6B100266D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ADCDF411B32A6B100266D07 = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF6F1B32A6DF00266D07 /* TabelViewLoadAnimation */,
+				5ADCDF4C1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo */,
+				5ADCDF621B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests */,
+				5ADCDF4B1B32A6B100266D07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ADCDF4B1B32A6B100266D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF4A1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo.app */,
+				5ADCDF5F1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ADCDF4C1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF4F1B32A6B100266D07 /* AppDelegate.swift */,
+				5ADCDF511B32A6B100266D07 /* ViewController.swift */,
+				5ADCDF721B32A92B00266D07 /* ZYViewController.swift */,
+				5ADCDF531B32A6B100266D07 /* Main.storyboard */,
+				5ADCDF561B32A6B100266D07 /* Images.xcassets */,
+				5ADCDF581B32A6B100266D07 /* LaunchScreen.xib */,
+				5ADCDF4D1B32A6B100266D07 /* Supporting Files */,
+			);
+			path = ZYTabelViewLoadAnimationDemo;
+			sourceTree = "<group>";
+		};
+		5ADCDF4D1B32A6B100266D07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF4E1B32A6B100266D07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ADCDF621B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF651B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.swift */,
+				5ADCDF631B32A6B100266D07 /* Supporting Files */,
+			);
+			path = ZYTabelViewLoadAnimationDemoTests;
+			sourceTree = "<group>";
+		};
+		5ADCDF631B32A6B100266D07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF641B32A6B100266D07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ADCDF6F1B32A6DF00266D07 /* TabelViewLoadAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCDF701B32A6DF00266D07 /* UITabelView+LoadAnimation.swift */,
+			);
+			path = TabelViewLoadAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ADCDF491B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADCDF691B32A6B100266D07 /* Build configuration list for PBXNativeTarget "ZYTabelViewLoadAnimationDemo" */;
+			buildPhases = (
+				5ADCDF461B32A6B100266D07 /* Sources */,
+				5ADCDF471B32A6B100266D07 /* Frameworks */,
+				5ADCDF481B32A6B100266D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYTabelViewLoadAnimationDemo;
+			productName = ZYTabelViewLoadAnimationDemo;
+			productReference = 5ADCDF4A1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ADCDF5E1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADCDF6C1B32A6B100266D07 /* Build configuration list for PBXNativeTarget "ZYTabelViewLoadAnimationDemoTests" */;
+			buildPhases = (
+				5ADCDF5B1B32A6B100266D07 /* Sources */,
+				5ADCDF5C1B32A6B100266D07 /* Frameworks */,
+				5ADCDF5D1B32A6B100266D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ADCDF611B32A6B100266D07 /* PBXTargetDependency */,
+			);
+			name = ZYTabelViewLoadAnimationDemoTests;
+			productName = ZYTabelViewLoadAnimationDemoTests;
+			productReference = 5ADCDF5F1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ADCDF421B32A6B100266D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = ZY;
+				TargetAttributes = {
+					5ADCDF491B32A6B100266D07 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					5ADCDF5E1B32A6B100266D07 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 5ADCDF491B32A6B100266D07;
+					};
+				};
+			};
+			buildConfigurationList = 5ADCDF451B32A6B100266D07 /* Build configuration list for PBXProject "ZYTabelViewLoadAnimationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ADCDF411B32A6B100266D07;
+			productRefGroup = 5ADCDF4B1B32A6B100266D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ADCDF491B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo */,
+				5ADCDF5E1B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ADCDF481B32A6B100266D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADCDF551B32A6B100266D07 /* Main.storyboard in Resources */,
+				5ADCDF5A1B32A6B100266D07 /* LaunchScreen.xib in Resources */,
+				5ADCDF571B32A6B100266D07 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADCDF5D1B32A6B100266D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ADCDF461B32A6B100266D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADCDF711B32A6DF00266D07 /* UITabelView+LoadAnimation.swift in Sources */,
+				5ADCDF521B32A6B100266D07 /* ViewController.swift in Sources */,
+				5ADCDF501B32A6B100266D07 /* AppDelegate.swift in Sources */,
+				5ADCDF731B32A92C00266D07 /* ZYViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADCDF5B1B32A6B100266D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADCDF661B32A6B100266D07 /* ZYTabelViewLoadAnimationDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ADCDF611B32A6B100266D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ADCDF491B32A6B100266D07 /* ZYTabelViewLoadAnimationDemo */;
+			targetProxy = 5ADCDF601B32A6B100266D07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ADCDF531B32A6B100266D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ADCDF541B32A6B100266D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5ADCDF581B32A6B100266D07 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ADCDF591B32A6B100266D07 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ADCDF671B32A6B100266D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ADCDF681B32A6B100266D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ADCDF6A1B32A6B100266D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5ADCDF6B1B32A6B100266D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5ADCDF6D1B32A6B100266D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYTabelViewLoadAnimationDemo.app/ZYTabelViewLoadAnimationDemo";
+			};
+			name = Debug;
+		};
+		5ADCDF6E1B32A6B100266D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYTabelViewLoadAnimationDemo.app/ZYTabelViewLoadAnimationDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ADCDF451B32A6B100266D07 /* Build configuration list for PBXProject "ZYTabelViewLoadAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADCDF671B32A6B100266D07 /* Debug */,
+				5ADCDF681B32A6B100266D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ADCDF691B32A6B100266D07 /* Build configuration list for PBXNativeTarget "ZYTabelViewLoadAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADCDF6A1B32A6B100266D07 /* Debug */,
+				5ADCDF6B1B32A6B100266D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ADCDF6C1B32A6B100266D07 /* Build configuration list for PBXNativeTarget "ZYTabelViewLoadAnimationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADCDF6D1B32A6B100266D07 /* Debug */,
+				5ADCDF6E1B32A6B100266D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ADCDF421B32A6B100266D07 /* Project object */;
+}

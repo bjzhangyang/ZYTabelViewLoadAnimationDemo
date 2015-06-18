@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qji-xp-xtY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--选择动画-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZYTabelViewLoadAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLt-g9-o5F">
+                                <rect key="frame" x="93" y="124" width="134" height="30"/>
+                                <state key="normal" title="DropDownFromTop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxz-Hf-puF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgT-Se-kho">
+                                <rect key="frame" x="96" y="185" width="128" height="30"/>
+                                <state key="normal" title="LiftUpFromBottum">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ap-bN-i6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZx-xB-WDi">
+                                <rect key="frame" x="103" y="306" width="114" height="30"/>
+                                <state key="normal" title="FromLeftToRight">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDm-d3-5Dj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPD-Th-ILf">
+                                <rect key="frame" x="103" y="245" width="114" height="30"/>
+                                <state key="normal" title="FromRightToLeft">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Reo-Rp-Rfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xPD-Th-ILf" secondAttribute="centerX" id="7Ti-Pq-AWZ"/>
+                            <constraint firstItem="xPD-Th-ILf" firstAttribute="top" secondItem="YgT-Se-kho" secondAttribute="bottom" constant="30" id="8Sb-XD-Q0F"/>
+                            <constraint firstItem="NLt-g9-o5F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="9fM-FD-gV4"/>
+                            <constraint firstItem="qZx-xB-WDi" firstAttribute="top" secondItem="xPD-Th-ILf" secondAttribute="bottom" constant="31" id="IhR-MS-Rn8"/>
+                            <constraint firstItem="YgT-Se-kho" firstAttribute="top" secondItem="NLt-g9-o5F" secondAttribute="bottom" constant="31" id="L9U-PD-V1C"/>
+                            <constraint firstAttribute="centerX" secondItem="NLt-g9-o5F" secondAttribute="centerX" id="hgU-Rl-DRN"/>
+                            <constraint firstAttribute="centerX" secondItem="qZx-xB-WDi" secondAttribute="centerX" id="nIZ-qf-mT8"/>
+                            <constraint firstAttribute="centerX" secondItem="YgT-Se-kho" secondAttribute="centerX" id="xwR-Yl-5iS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择动画" id="xuP-hu-Huw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="392"/>
+        </scene>
+        <!--展示动画-->
+        <scene sceneID="V4S-fG-3T9">
+            <objects>
+                <viewController storyboardIdentifier="tableView" id="ZOd-6U-Pmj" customClass="ZYViewController" customModule="ZYTabelViewLoadAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GTJ-ok-wgc"/>
+                        <viewControllerLayoutGuide type="bottom" id="zqg-E2-MxE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJi-hp-2Ow">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-SB-Wh5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZOd-6U-Pmj" id="s7v-sk-og6"/>
+                                    <outlet property="delegate" destination="ZOd-6U-Pmj" id="b7Y-OK-646"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zqg-E2-MxE" firstAttribute="top" secondItem="SXG-SB-Wh5" secondAttribute="bottom" id="IkP-sS-myz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SXG-SB-Wh5" secondAttribute="trailing" constant="-16" id="UA1-7S-XEO"/>
+                            <constraint firstItem="SXG-SB-Wh5" firstAttribute="top" secondItem="sJi-hp-2Ow" secondAttribute="topMargin" id="cdX-1O-k92"/>
+                            <constraint firstItem="SXG-SB-Wh5" firstAttribute="leading" secondItem="sJi-hp-2Ow" secondAttribute="leadingMargin" constant="-16" id="tQb-cn-cQI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="展示动画" id="x6k-Ua-Jan"/>
+                    <connections>
+                        <outlet property="tableView" destination="SXG-SB-Wh5" id="C0c-Ef-qLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQm-Db-p3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="392"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BHh-NH-I2i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qji-xp-xtY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kdx-ri-k64">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QIa-pK-BkC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXr-d8-y62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="392"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
