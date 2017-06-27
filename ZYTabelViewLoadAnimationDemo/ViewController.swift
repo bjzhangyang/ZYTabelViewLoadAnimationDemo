@@ -16,21 +16,21 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func clicked(sender: UIButton) {
-        var direct:AnimationDirect = AnimationDirect.DropDownFromTop
+    @IBAction func clicked(_ sender: UIButton) {
+        var direct:AnimationDirect = AnimationDirect.dropDownFromTop
         switch sender.tag{
         case 1:
-            direct = AnimationDirect.DropDownFromTop
+            direct = AnimationDirect.dropDownFromTop
         case 2:
-            direct = AnimationDirect.LiftUpFromBottum
+            direct = AnimationDirect.liftUpFromBottum
         case 3:
-            direct = AnimationDirect.FromRightToLeft
+            direct = AnimationDirect.fromRightToLeft
         case 4:
-            direct = AnimationDirect.FromLeftToRight
+            direct = AnimationDirect.fromLeftToRight
         default:
             return
         }
-        var target : ZYViewController = self.storyboard?.instantiateViewControllerWithIdentifier("tableView") as! ZYViewController
+        let target : ZYViewController = self.storyboard?.instantiateViewController(withIdentifier: "tableView") as! ZYViewController
         target.direct = direct
         self.navigationController?.pushViewController(target, animated: true)
     }

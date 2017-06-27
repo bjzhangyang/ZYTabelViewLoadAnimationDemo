@@ -176,9 +176,11 @@
 				TargetAttributes = {
 					5ADCDF491B32A6B100266D07 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0820;
 					};
 					5ADCDF5E1B32A6B100266D07 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 5ADCDF491B32A6B100266D07;
 					};
 				};
@@ -362,6 +364,7 @@
 				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -372,6 +375,7 @@
 				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -390,6 +394,7 @@
 				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYTabelViewLoadAnimationDemo.app/ZYTabelViewLoadAnimationDemo";
 			};
 			name = Debug;
@@ -405,6 +410,7 @@
 				INFOPLIST_FILE = ZYTabelViewLoadAnimationDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYTabelViewLoadAnimationDemo.app/ZYTabelViewLoadAnimationDemo";
 			};
 			name = Release;
@@ -428,6 +434,7 @@
 				5ADCDF6B1B32A6B100266D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ADCDF6C1B32A6B100266D07 /* Build configuration list for PBXNativeTarget "ZYTabelViewLoadAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				5ADCDF6E1B32A6B100266D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

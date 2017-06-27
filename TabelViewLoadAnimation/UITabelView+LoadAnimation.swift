@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 enum AnimationDirect{
-   case DropDownFromTop
-   case LiftUpFromBottum
-   case FromRightToLeft
-   case FromLeftToRight
+   case dropDownFromTop
+   case liftUpFromBottum
+   case fromRightToLeft
+   case fromLeftToRight
 }
 extension UITableView {
     /**
@@ -23,35 +23,35 @@ extension UITableView {
     *  @param   interval  每个cell间隔，设置成0.1
     *  @example self.tableView.reloadDataWithAnimate(AnimationDirect.DropDownFromTop, animationTime: 0.5, interval: 0.05)
     */
-    func reloadDataWithAnimate(direct:AnimationDirect,animationTime:NSTimeInterval,interval:NSTimeInterval)->Void{
+    func reloadDataWithAnimate(_ direct:AnimationDirect,animationTime:TimeInterval,interval:TimeInterval)->Void{
         self.setContentOffset(self.contentOffset, animated: false)
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
-            self.hidden = true
+        UIView.animate(withDuration: 0.2, animations: { () -> Void in
+            self.isHidden = true
             self.reloadData()
-        }) { (finished) -> Void in
-            self.hidden = false
+        }, completion: { (finished) -> Void in
+            self.isHidden = false
             self.visibleRowsBeginAnimation(direct, animationTime: animationTime, interval: interval)
-        }
+        }) 
     }
-    func visibleRowsBeginAnimation(direct:AnimationDirect,animationTime:NSTimeInterval,interval:NSTimeInterval)->Void{
-        var visibleArray : NSArray = self.indexPathsForVisibleRows()! as NSArray
+    func visibleRowsBeginAnimation(_ direct:AnimationDirect,animationTime:TimeInterval,interval:TimeInterval)->Void{
+        let visibleArray : NSArray = self.indexPathsForVisibleRows! as NSArray
         let count =  visibleArray.count
         switch direct{
-        case .DropDownFromTop:
+        case .dropDownFromTop:
             for i in 0...(count-1){
-                var path : NSIndexPath = visibleArray.objectAtIndex(count - 1 - i) as! NSIndexPath
-                var cell : UITableViewCell = self.cellForRowAtIndexPath(path)!
-                cell.hidden = true
+                let path : IndexPath = visibleArray.object(at: count - 1 - i) as! IndexPath
+                let cell : UITableViewCell = self.cellForRow(at: path)!
+                cell.isHidden = true
                 let originPoint : CGPoint = cell.center
-                cell.center = CGPointMake(originPoint.x, originPoint.y - 1000)
-                UIView.animateWithDuration(animationTime + NSTimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    cell.center = CGPointMake(originPoint.x ,  originPoint.y + 2.0)
-                    cell.hidden = false
+                cell.center = CGPoint(x: originPoint.x, y: originPoint.y - 1000)
+                UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                    cell.center = CGPoint(x: originPoint.x ,  y: originPoint.y + 2.0)
+                    cell.isHidden = false
                     }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            cell.center = CGPointMake(originPoint.x ,  originPoint.y - 2.0)
+                        UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                            cell.center = CGPoint(x: originPoint.x ,  y: originPoint.y - 2.0)
                             }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                                UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
                                     cell.center = originPoint
                                     }, completion: { (finished) -> Void in
                                         
@@ -60,21 +60,21 @@ extension UITableView {
 
                 })
             }
-        case .LiftUpFromBottum:
+        case .liftUpFromBottum:
             for i in 0...(count-1){
-                var path : NSIndexPath = visibleArray.objectAtIndex(i) as! NSIndexPath
-                var cell : UITableViewCell = self.cellForRowAtIndexPath(path)!
-                cell.hidden = true
+                let path : IndexPath = visibleArray.object(at: i) as! IndexPath
+                let cell : UITableViewCell = self.cellForRow(at: path)!
+                cell.isHidden = true
                 let originPoint : CGPoint = cell.center
-                cell.center = CGPointMake(originPoint.x, originPoint.y + 1000)
-                UIView.animateWithDuration(animationTime + NSTimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
-                    cell.center = CGPointMake(originPoint.x ,  originPoint.y - 2.0)
-                    cell.hidden = false
+                cell.center = CGPoint(x: originPoint.x, y: originPoint.y + 1000)
+                UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+                    cell.center = CGPoint(x: originPoint.x ,  y: originPoint.y - 2.0)
+                    cell.isHidden = false
                     }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            cell.center = CGPointMake(originPoint.x ,  originPoint.y + 2.0)
+                        UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                            cell.center = CGPoint(x: originPoint.x ,  y: originPoint.y + 2.0)
                             }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                                UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
                                     cell.center = originPoint
                                     }, completion: { (finished) -> Void in
                                         
@@ -82,21 +82,21 @@ extension UITableView {
                         })
                 })
             }
-        case .FromLeftToRight:
+        case .fromLeftToRight:
             for i in 0...(count-1){
-                var path : NSIndexPath = visibleArray.objectAtIndex(i) as! NSIndexPath
-                var cell : UITableViewCell = self.cellForRowAtIndexPath(path)!
-                cell.hidden = true
+                let path : IndexPath = visibleArray.object(at: i) as! IndexPath
+                let cell : UITableViewCell = self.cellForRow(at: path)!
+                cell.isHidden = true
                 let originPoint : CGPoint = cell.center
-                cell.center = CGPointMake(-cell.frame.size.width,  originPoint.y)
-                UIView.animateWithDuration(animationTime + NSTimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
-                    cell.center = CGPointMake(originPoint.x - 2.0,  originPoint.y)
-                    cell.hidden = false;
+                cell.center = CGPoint(x: -cell.frame.size.width,  y: originPoint.y)
+                UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+                    cell.center = CGPoint(x: originPoint.x - 2.0,  y: originPoint.y)
+                    cell.isHidden = false;
                 }, completion: { (finished) -> Void in
-                    UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                        cell.center = CGPointMake(originPoint.x + 2.0,  originPoint.y)
+                    UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                        cell.center = CGPoint(x: originPoint.x + 2.0,  y: originPoint.y)
                     }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                        UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
                             cell.center = originPoint
                             }, completion: { (finished) -> Void in
                                 
@@ -104,21 +104,21 @@ extension UITableView {
                     })
                 })
             }
-        case .FromRightToLeft:
+        case .fromRightToLeft:
             for i in 0...(count-1){
-                var path : NSIndexPath = visibleArray.objectAtIndex(i) as! NSIndexPath
-                var cell : UITableViewCell = self.cellForRowAtIndexPath(path)!
-                cell.hidden = true
+                let path : IndexPath = visibleArray.object(at: i) as! IndexPath
+                let cell : UITableViewCell = self.cellForRow(at: path)!
+                cell.isHidden = true
                 let originPoint : CGPoint = cell.center
-                cell.center = CGPointMake(cell.frame.size.width * 3.0,  originPoint.y)
-                UIView.animateWithDuration(animationTime + NSTimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
-                    cell.center = CGPointMake(originPoint.x + 2.0,  originPoint.y)
-                    cell.hidden = false;
+                cell.center = CGPoint(x: cell.frame.size.width * 3.0,  y: originPoint.y)
+                UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+                    cell.center = CGPoint(x: originPoint.x + 2.0,  y: originPoint.y)
+                    cell.isHidden = false;
                     }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            cell.center = CGPointMake(originPoint.x - 2.0,  originPoint.y)
+                        UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                            cell.center = CGPoint(x: originPoint.x - 2.0,  y: originPoint.y)
                             }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                                UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
                                     cell.center = originPoint
                                     }, completion: { (finished) -> Void in
                                         

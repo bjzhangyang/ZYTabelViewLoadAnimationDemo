@@ -22,15 +22,15 @@ class ZYViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return 20
     }
 
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("cell") as? UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell") as  UITableViewCell?
         if (cell == nil){
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = "这是第\(indexPath.row)行"
         return cell!
