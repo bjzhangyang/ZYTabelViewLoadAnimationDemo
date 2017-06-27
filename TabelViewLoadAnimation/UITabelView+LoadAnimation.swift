@@ -127,8 +127,7 @@ extension UITableView {
                 })
 
             }
-        default:
-            return
+        
         }
         
     }
